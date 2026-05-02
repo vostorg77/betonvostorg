@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бетон-восторг — Производство бетона в Воронеже</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link href="./fonts.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="lucide.js"></script>
+    <script src="index.js"></script>
+    <body>
+      <nav>
+        <a href="#" class="nav-logo">Бетон<span>-восторг</span></a>
+        <ul class="nav-links">
+          <li>
+            <a href="#materials">Материалы</a>
+          </li>
+          <li>
+            <a href="#advantages">Преимущества</a>
+          </li>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
+          <li>
+            <a href="#callback">Контакты</a>
+          </li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn btn-secondary" onclick="openCallback()">Заказать звонок</button>
+          <button class="btn btn-primary" onclick="scrollToCalc()">Рассчитать стоимость</button>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-inner">
+          <div>
+            <div class="hero-tag">Производство в&nbsp;Воронеже · Доставка 24/7</div>
+            <h1>Бетон&nbsp;любой<br />марки —&nbsp;<em>с&nbsp;завода</em></h1>
+            <p class="hero-desc">
+              Производим и&nbsp;доставляем товарный бетон М100–М500 по&nbsp;Воронежу и&nbsp;области.
+              Собственный завод, аттестованная лаборатория, парк из&nbsp;24&nbsp;миксеров.
+            </p>
+            <div class="hero-ctas">
+              <button class="btn btn-primary" onclick="scrollToCalc()">Рассчитать стоимость</button>
+              <button class="btn btn-secondary" onclick="openCallback()">Заказать звонок</button>
+            </div>
+          </div>
+          <div class="hero-right">
+            <img class="hero-photo" src="kamaz.webp" alt="Автобетоносмеситель КАМАЗ" />
+            <div class="hero-cards-float">
+              <div class="hero-chip">
+                <div class="hero-chip-icon" style="background: #e8f7ef">
+                  <svg viewBox="0 0 24 24" stroke="var(--green)">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="hero-chip-val" style="color: var(--green)">
+                    Сегодня от&nbsp;3&nbsp;часов
+                  </div>
+                  <div class="hero-chip-sub">Ближайший срок доставки</div>
+                </div>
+              </div>
+              <div class="hero-chip">
+                <div class="hero-chip-icon" style="background: var(--accentbg)">
+                  <svg viewBox="0 0 24 24" stroke="var(--accent)">
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="hero-chip-val">24</div>
+                  <div class="hero-chip-sub">Миксера в&nbsp;парке</div>
+                </div>
+              </div>
+              <div class="hero-chip">
+                <div class="hero-chip-icon" style="background: var(--bluebg)">
+                  <svg viewBox="0 0 24 24" stroke="var(--blue)">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="hero-chip-val">15+</div>
+                  <div class="hero-chip-sub">Лет на&nbsp;рынке</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats">
+        <div class="stats-inner">
+          <div class="stat-item">
+            <div class="stat-num">1200<span>+</span></div>
+            <div class="stat-label">объектов сдано<br />за&nbsp;15&nbsp;лет работы</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">25<span>₽/км</span></div>
+            <div class="stat-label">стоимость доставки<br />за&nbsp;километр</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3<span>ч</span></div>
+            <div class="stat-label">среднее время<br />доставки по&nbsp;городу</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100<span>%</span></div>
+            <div class="stat-label">партий сопровождаются<br />паспортами качества</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section advantages" id="advantages">
+        <div class="section-inner">
+          <div class="adv-header">
+            <div>
+              <div class="section-tag">Почему мы</div>
+              <div class="section-title">Преимущества компании</div>
+            </div>
+            <p class="section-sub" style="max-width: 340px">
+              Работаем напрямую — без посредников и&nbsp;наценок
+            </p>
+          </div>
+          <div class="adv-grid">
+            <div class="adv-card">
+              <div class="adv-icon" style="background: var(--accentbg)">
+                <svg viewBox="0 0 24 24" stroke="var(--accent)">
+                  <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                  <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
+                  <line x1="12" y1="12" x2="12" y2="16"></line>
+                  <line x1="10" y1="14" x2="14" y2="14"></line>
+                </svg>
+              </div>
+              <div class="adv-title">Собственное производство</div>
+              <div class="adv-desc">
+                Завод полного цикла в&nbsp;Воронеже. Производим бетон сами — никаких перекупщиков.
+                Цены ниже рыночных на&nbsp;10–15%.
+              </div>
+            </div>
+            <div class="adv-card">
+              <div class="adv-icon" style="background: var(--bluebg)">
+                <svg viewBox="0 0 24 24" stroke="var(--blue)">
+                  <path
+                    d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"
+                  ></path>
+                  <path
+                    d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
+                  ></path>
+                  <path
+                    d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"
+                  ></path>
+                  <path
+                    d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"
+                  ></path>
+                  <path
+                    d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"
+                  ></path>
+                  <path
+                    d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"
+                  ></path>
+                  <path
+                    d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"
+                  ></path>
+                  <path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path>
+                </svg>
+              </div>
+              <div class="adv-title">Лабораторный контроль</div>
+              <div class="adv-desc">
+                Аттестованная лаборатория на&nbsp;производстве. Каждая партия проверяется
+                на&nbsp;7-е и&nbsp;28-е сутки набора прочности.
+              </div>
+            </div>
+            <div class="adv-card">
+              <div class="adv-icon" style="background: var(--greenbg)">
+                <svg viewBox="0 0 24 24" stroke="var(--green)">
+                  <rect x="1" y="3" width="15" height="13"></rect>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                  <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                  <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                </svg>
+              </div>
+              <div class="adv-title">Собственный автопарк</div>
+              <div class="adv-desc">
+                24&nbsp;автобетоносмесителя в&nbsp;постоянной готовности. Доставляем круглосуточно,
+                без выходных, по&nbsp;всей Воронежской области.
+              </div>
+            </div>
+            <div class="adv-card">
+              <div class="adv-icon" style="background: #fff0f0">
+                <svg viewBox="0 0 24 24" stroke="#D93A3A">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div class="adv-title">Полный пакет документов</div>
+              <div class="adv-desc">
+                Каждая поставка сопровождается техническим паспортом, сертификатом соответствия
+                и&nbsp;товарной накладной.
+              </div>
+            </div>
+            <div class="adv-card">
+              <div class="adv-icon" style="background: #fbf3ff">
+                <svg viewBox="0 0 24 24" stroke="#9B3DD9">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div class="adv-title">Быстрое оформление</div>
+              <div class="adv-desc">
+                Заявка принимается за&nbsp;5&nbsp;минут. Договор, счёт и&nbsp;документы —
+                в&nbsp;день обращения. Работаем с&nbsp;физлицами и&nbsp;юрлицами.
+              </div>
+            </div>
+            <div class="adv-card">
+              <div class="adv-icon" style="background: var(--accentbg)">
+                <svg viewBox="0 0 24 24" stroke="var(--accent)">
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                  <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+              </div>
+              <div class="adv-title">Любая форма оплаты</div>
+              <div class="adv-desc">
+                Наличные, карта, безналичный расчёт. Рассрочка для&nbsp;крупных объектов. Скидки
+                при&nbsp;заказе от&nbsp;50&nbsp;м³.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section materials" id="materials">
+        <div class="section-inner">
+          <div class="section-tag">Ассортимент</div>
+          <div class="section-title">Материалы и&nbsp;цены</div>
+          <p class="section-sub" style="margin-bottom: 32px">
+            Актуальный прайс на&nbsp;бетон, раствор и&nbsp;нерудные материалы. Цены указаны
+            за&nbsp;1&nbsp;м³ без учёта доставки.
+          </p>
+          <div class="mat-tabs">
+            <button class="mat-tab active" onclick="switchTab('beton', this)">
+              Товарный бетон
+            </button>
+            <button class="mat-tab" onclick="switchTab('rastvor', this)">Раствор</button>
+            <button class="mat-tab" onclick="switchTab('nerud', this)">Нерудные материалы</button>
+          </div>
+
+          <div id="tab-beton">
+            <table class="mat-table">
+              <thead>
+                <tr>
+                  <th>Марка / класс</th>
+                  <th>Применение</th>
+                  <th>Подвижность</th>
+                  <th>Цена за&nbsp;м³</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="mat-grade">М100</div>
+                    <div class="mat-class">В&nbsp;7,5</div>
+                  </td>
+                  <td><div class="mat-use">Подготовительные работы, подбетонка</div></td>
+                  <td>П1–П3</td>
+                  <td>
+                    <div class="mat-price">
+                      4&nbsp;900&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="mat-grade">М150</div>
+                    <div class="mat-class">В&nbsp;12,5</div>
+                  </td>
+                  <td><div class="mat-use">Дорожки, отмостки, стяжки полов</div></td>
+                  <td>П1–П4</td>
+                  <td>
+                    <div class="mat-price">
+                      5&nbsp;200&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="mat-grade">М200</div>
+                    <div class="mat-class">В&nbsp;15</div>
+                  </td>
+                  <td><div class="mat-use">Фундаменты, перекрытия, стяжки</div></td>
+                  <td>П2–П5</td>
+                  <td>
+                    <div class="mat-price">
+                      5&nbsp;600&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td><span class="badge badge-pop">Популярный</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="mat-grade">М250</div>
+                    <div class="mat-class">В&nbsp;20</div>
+                  </td>
+                  <td><div class="mat-use">Монолитные конструкции, лестницы</div></td>
+                  <td>П2–П5</td>
+                  <td>
+                    <div class="mat-price">
+                      6&nbsp;000&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="mat-grade">М300</div>
+                    <div class="mat-class">В&nbsp;22,5</div>
+                  </td>
+                  <td><div class="mat-use">Фундаменты под нагрузкой, плиты</div></td>
+                  <td>П2–П5</td>
+                  <td>
+                    <div class="mat-price">
+                      6&nbsp;400&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td><span class="badge badge-pop">Популярный</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="mat-grade">М350</div>
+                    <div class="mat-class">В&nbsp;25</div>
+                  </td>
+                  <td><div class="mat-use">Многоэтажное строительство, мосты</div></td>
+                  <td>П2–П5</td>
+                  <td>
+                    <div class="mat-price">
+                      6&nbsp;900&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="mat-grade">М400</div>
+                    <div class="mat-class">В&nbsp;30</div>
+                  </td>
+                  <td><div class="mat-use">Гидротехнические сооружения</div></td>
+                  <td>П2–П5</td>
+                  <td>
+                    <div class="mat-price">
+                      7&nbsp;600&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td><span class="badge badge-new">Спец. заказ</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="tab-rastvor" style="display: none">
+            <table class="mat-table">
+              <thead>
+                <tr>
+                  <th>Марка</th>
+                  <th>Применение</th>
+                  <th>Состав</th>
+                  <th>Цена за&nbsp;м³</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div class="mat-grade">М50</div></td>
+                  <td><div class="mat-use">Кладочный, штукатурный</div></td>
+                  <td>Ц:П&nbsp;1:5</td>
+                  <td>
+                    <div class="mat-price">
+                      3&nbsp;800&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><div class="mat-grade">М75</div></td>
+                  <td><div class="mat-use">Кладка кирпича, блоков</div></td>
+                  <td>Ц:П&nbsp;1:4</td>
+                  <td>
+                    <div class="mat-price">
+                      4&nbsp;100&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td><span class="badge badge-pop">Популярный</span></td>
+                </tr>
+                <tr>
+                  <td><div class="mat-grade">М100</div></td>
+                  <td><div class="mat-use">Кладка, стяжка пола</div></td>
+                  <td>Ц:П&nbsp;1:3</td>
+                  <td>
+                    <div class="mat-price">
+                      4&nbsp;400&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><div class="mat-grade">М150</div></td>
+                  <td><div class="mat-use">Стяжки с&nbsp;повышенной нагрузкой</div></td>
+                  <td>Ц:П&nbsp;1:2</td>
+                  <td>
+                    <div class="mat-price">
+                      4&nbsp;800&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><div class="mat-grade">М200</div></td>
+                  <td><div class="mat-use">Промышленные полы, дорожки</div></td>
+                  <td>Ц:П&nbsp;1:1</td>
+                  <td>
+                    <div class="mat-price">
+                      5&nbsp;200&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="tab-nerud" style="display: none">
+            <table class="mat-table">
+              <thead>
+                <tr>
+                  <th>Материал</th>
+                  <th>Фракция</th>
+                  <th>Происхождение</th>
+                  <th>Цена за&nbsp;м³</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div class="mat-grade">Щебень гранитный</div></td>
+                  <td>5–20&nbsp;мм</td>
+                  <td>Карелия</td>
+                  <td>
+                    <div class="mat-price">
+                      1&nbsp;900&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><div class="mat-grade">Щебень гранитный</div></td>
+                  <td>20–40&nbsp;мм</td>
+                  <td>Карелия</td>
+                  <td>
+                    <div class="mat-price">
+                      1&nbsp;750&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td><span class="badge badge-pop">Популярный</span></td>
+                </tr>
+                <tr>
+                  <td><div class="mat-grade">Щебень известняковый</div></td>
+                  <td>5–20&nbsp;мм</td>
+                  <td>Воронежская обл.</td>
+                  <td>
+                    <div class="mat-price">
+                      1&nbsp;400&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><div class="mat-grade">Песок речной</div></td>
+                  <td>Мк&nbsp;2,0–2,5</td>
+                  <td>р.&nbsp;Дон</td>
+                  <td>
+                    <div class="mat-price">900&nbsp;<span class="mat-price-unit">₽</span></div>
+                  </td>
+                  <td><span class="badge badge-pop">Популярный</span></td>
+                </tr>
+                <tr>
+                  <td><div class="mat-grade">Песок карьерный</div></td>
+                  <td>Мк&nbsp;1,6–2,0</td>
+                  <td>Воронежская обл.</td>
+                  <td>
+                    <div class="mat-price">700&nbsp;<span class="mat-price-unit">₽</span></div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><div class="mat-grade">Отсев гранитный</div></td>
+                  <td>0–5&nbsp;мм</td>
+                  <td>Карелия</td>
+                  <td>
+                    <div class="mat-price">
+                      1&nbsp;100&nbsp;<span class="mat-price-unit">₽</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mat-cta-row">
+            <button class="btn btn-dark" onclick="scrollToCalc()">
+              Рассчитать стоимость заказа →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section calculator" id="calculator">
+        <div class="section-inner">
+          <div class="calc-wrapper">
+            <div class="calc-info">
+              <div class="section-tag">Калькулятор</div>
+              <div class="calc-info-title">Рассчитайте<br />примерную<br /><em>стоимость</em></div>
+              <p class="section-sub" style="color: rgba(255, 255, 255, 0.45)">
+                Укажите марку бетона, объём и&nbsp;расстояние доставки — стоимость рассчитается
+                автоматически. Точную цену уточнит менеджер.
+              </p>
+              <div class="calc-steps">
+                <div class="calc-step">
+                  <div class="calc-step-num">1</div>
+                  <div class="calc-step-text">
+                    <strong>Выберите марку бетона</strong> под ваш тип работ
+                  </div>
+                </div>
+                <div class="calc-step">
+                  <div class="calc-step-num">2</div>
+                  <div class="calc-step-text">
+                    <strong>Укажите объём</strong> в&nbsp;кубических метрах
+                  </div>
+                </div>
+                <div class="calc-step">
+                  <div class="calc-step-num">3</div>
+                  <div class="calc-step-text">
+                    <strong>Укажите расстояние</strong> — до&nbsp;10, 30 или 50&nbsp;км: тариф
+                    доставки зависит от&nbsp;зоны
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-form">
+              <div class="calc-title">Калькулятор стоимости</div>
+              <div class="form-row">
+                <label class="form-label">Марка бетона</label>
+                <div class="select-wrap">
+                  <select class="form-select" id="calc-grade" onchange="calcPrice()">
+                    <option value="4900">М100 (В&nbsp;7,5) — подбетонка</option>
+                    <option value="5200">М150 (В&nbsp;12,5) — стяжки, дорожки</option>
+                    <option value="5600" selected="">М200 (В&nbsp;15) — фундаменты ★</option>
+                    <option value="6000">М250 (В&nbsp;20) — монолит</option>
+                    <option value="6400">М300 (В&nbsp;22,5) — нагруженные конструкции ★</option>
+                    <option value="6900">М350 (В&nbsp;25) — многоэтажки</option>
+                    <option value="7600">М400 (В&nbsp;30) — спец. конструкции</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-2col">
+                <div class="form-row">
+                  <label class="form-label">Объём, м³</label>
+                  <input
+                    type="number"
+                    class="form-input"
+                    id="calc-volume"
+                    value="10"
+                    min="1"
+                    max="9999"
+                    oninput="calcPrice()"
+                  />
+                </div>
+                <div class="form-row">
+                  <label class="form-label">Доставка, км</label>
+                  <input
+                    type="number"
+                    class="form-input"
+                    id="calc-km"
+                    value="15"
+                    min="0"
+                    max="200"
+                    oninput="calcPrice()"
+                  />
+                </div>
+              </div>
+              <div class="calc-result">
+                <div>
+                  <div class="calc-result-label">Примерная стоимость</div>
+                  <div class="calc-result-price" id="calc-output">71&nbsp;000 ₽</div>
+                  <div class="calc-result-sub" id="calc-breakdown">
+                    10 м³ × 5&nbsp;600 ₽ (материал) + доставка до 30 км: 15&nbsp;000 ₽
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" style="color: rgba(255, 255, 255, 0.5)"
+                  >Ваш телефон</label
+                >
+                <input
+                  type="tel"
+                  class="form-input"
+                  id="calc-phone"
+                  placeholder="+7 (___) ___-__-__"
+                />
+              </div>
+              <button class="btn btn-primary calc-btn" onclick="submitCalc()">
+                Получить точный расчёт
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section-inner">
+          <div class="section-tag">Частые вопросы</div>
+          <div class="section-title">FAQ</div>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Какой минимальный объём заказа?</span>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-a">
+                Минимальный объём — 1&nbsp;м³. Для заказов до&nbsp;3&nbsp;м³ доступна доставка
+                малогабаритным миксером. Стандартный миксер загружается
+                от&nbsp;7&nbsp;до&nbsp;8&nbsp;м³.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Как быстро вы доставляете?</span>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-a">
+                По Воронежу — в&nbsp;среднем 2–4&nbsp;часа после оформления заявки. В&nbsp;область —
+                от&nbsp;4&nbsp;часов. При срочных заказах связывайтесь по&nbsp;телефону напрямую —
+                постараемся ускорить.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Какую марку выбрать для фундамента?</span>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-a">
+                Для частного дома и&nbsp;дачного строительства подходит М200 или М250. Для
+                многоэтажного строительства и&nbsp;высоконагруженных конструкций рекомендуем М300
+                и&nbsp;выше. Наши менеджеры помогут с&nbsp;выбором бесплатно.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Есть ли сертификаты на продукцию?</span>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-a">
+                Да. Каждая партия сопровождается паспортом качества, сертификатом соответствия
+                и&nbsp;протоколами испытаний лаборатории. Документы передаются вместе
+                с&nbsp;доставкой.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Как производится оплата?</span>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-a">
+                Принимаем наличные, банковскую карту и&nbsp;безналичный перевод. Для юридических лиц
+                работаем по&nbsp;договору с&nbsp;отсрочкой платежа. При крупных заказах возможна
+                постоплата.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Работаете ли вы в выходные и праздники?</span>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-a">
+                Да, работаем 24/7, 365&nbsp;дней в&nbsp;году. Производство и&nbsp;диспетчерская
+                не&nbsp;останавливаются. Заявки принимаются круглосуточно по&nbsp;телефону
+                и&nbsp;на&nbsp;сайте.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Можно ли заказать бетононасос?</span>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-a">
+                Да, предоставляем в&nbsp;аренду автобетононасосы с&nbsp;различной длиной стрелы —
+                от&nbsp;24&nbsp;до&nbsp;52&nbsp;метров. Стоимость аренды рассчитывается
+                индивидуально в&nbsp;зависимости от&nbsp;объёма и&nbsp;условий работы.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q" onclick="toggleFaq(this)">
+                <span>Есть ли скидки при крупных заказах?</span>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-a">
+                Да. При заказе от&nbsp;50&nbsp;м³ — скидка 3%, от&nbsp;100&nbsp;м³ — 5%,
+                от&nbsp;500&nbsp;м³ и&nbsp;для постоянных клиентов — индивидуальные условия. Для
+                строительных компаний и&nbsp;застройщиков предусмотрены специальные тарифы.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section callback" id="callback">
+        <div class="callback-inner">
+          <div class="callback-left">
+            <div class="section-tag">Связаться</div>
+            <div class="section-title">Перезвоним<br />в&nbsp;течение<br />5&nbsp;минут</div>
+            <p class="section-sub">
+              Оставьте номер — менеджер свяжется с&nbsp;вами, ответит на&nbsp;вопросы и&nbsp;поможет
+              оформить заказ.
+            </p>
+            <div style="margin-top: 32px; display: flex; flex-direction: column; gap: 16px">
+              <div style="display: flex; align-items: center; gap: 14px">
+                <div
+                  class="contact-icon"
+                  style="
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 11px;
+                    background: var(--accentbg);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                  "
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    stroke="var(--accent)"
+                    fill="none"
+                    stroke-width="1.8"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.68 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1.19h3a2 2 0 0 1 2 1.72c.13 1 .37 1.97.72 2.9a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6.29 6.29l.88-.88a2 2 0 0 1 2.11-.45c.93.35 1.9.59 2.9.72a2 2 0 0 1 1.73 2.04z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-size: 12px; color: var(--muted); margin-bottom: 2px">
+                    Телефон
+                  </div>
+                  <a
+                    href="tel:+74732000000"
+                    style="
+                      color: var(--dark);
+                      text-decoration: none;
+                      font-weight: 700;
+                      font-size: 18px;
+                    "
+                    >+7&nbsp;(473)&nbsp;200-00-00</a
+                  >
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px">
+                <div
+                  class="contact-icon"
+                  style="
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 11px;
+                    background: var(--greenbg);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                  "
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    stroke="var(--green)"
+                    fill="none"
+                    stroke-width="1.8"
+                    width="20"
+                    height="20"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-size: 12px; color: var(--muted); margin-bottom: 2px">
+                    Режим работы
+                  </div>
+                  <span style="font-weight: 700; font-size: 15px">Круглосуточно, 24/7</span>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px">
+                <div
+                  class="contact-icon"
+                  style="
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 11px;
+                    background: var(--bluebg);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                  "
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    stroke="var(--blue)"
+                    fill="none"
+                    stroke-width="1.8"
+                    width="20"
+                    height="20"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-size: 12px; color: var(--muted); margin-bottom: 2px">
+                    Адрес завода
+                  </div>
+                  <span style="font-weight: 700; font-size: 15px"
+                    >г.&nbsp;Воронеж, ул.&nbsp;Промышленная, 12</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="callback-form">
+            <div
+              style="
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 22px;
+                letter-spacing: -0.02em;
+                color: var(--dark);
+              "
+            >
+              Заказать звонок
+            </div>
+            <input type="text" class="form-input" id="cb-name" placeholder="Ваше имя" />
+            <input type="tel" class="form-input" id="cb-phone" placeholder="+7 (___) ___-__-__" />
+            <input
+              type="text"
+              class="form-input"
+              id="cb-time"
+              placeholder="Удобное время звонка (необязательно)"
+            />
+            <textarea
+              class="form-input"
+              id="cb-comment"
+              placeholder="Комментарий к заявке (необязательно)"
+            ></textarea>
+            <div class="cb-footer">
+              <div class="cb-policy">
+                Нажимая кнопку, вы соглашаетесь с&nbsp;<a href="#">политикой конфиденциальности</a>
+              </div>
+              <button class="btn btn-primary cb-btn" onclick="submitCallback()">
+                Перезвоните мне
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-inner">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <a href="#" class="f-logo">Бетон<span>-восторг</span></a>
+              <p>
+                Производство и&nbsp;доставка бетона любой марки по&nbsp;Воронежу и&nbsp;области.
+                Работаем с&nbsp;2009&nbsp;года.
+              </p>
+              <div class="footer-phone">
+                <a href="tel:+74732000000">+7&nbsp;(473)&nbsp;200-00-00</a>
+              </div>
+              <div style="font-size: 13px; color: rgba(255, 255, 255, 0.3); margin-top: 4px">
+                Принимаем заявки 24/7
+              </div>
+            </div>
+            <div class="footer-cols">
+              <div class="footer-col">
+                <h4>Материалы</h4>
+                <ul>
+                  <li>
+                    <a href="#materials">Товарный бетон</a>
+                  </li>
+                  <li>
+                    <a href="#materials">Цементный раствор</a>
+                  </li>
+                  <li>
+                    <a href="#materials">Щебень и&nbsp;песок</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Компания</h4>
+                <ul>
+                  <li>
+                    <a href="#advantages">О нас</a>
+                  </li>
+                  <li>
+                    <a href="#faq">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#callback">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Услуги</h4>
+                <ul>
+                  <li>
+                    <a href="#">Аренда бетононасоса</a>
+                  </li>
+                  <li>
+                    <a href="#">Доставка миксером</a>
+                  </li>
+                  <li>
+                    <a href="#">Лабораторный анализ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span>© 2009–2026 ООО «Бетон-восторг». Все права защищены.</span>
+            <span>г.&nbsp;Воронеж, ул.&nbsp;Промышленная, 12</span>
+          </div>
+        </div>
+      </footer>
+
+      <div class="toast" id="toast">
+        <div class="toast-icon">✓</div>
+        <span>Заявка принята! Перезвоним в&nbsp;течение 5&nbsp;минут</span>
+      </div>
+    </body>
+  </head>
+</html>
