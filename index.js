@@ -126,9 +126,12 @@ async function submitCallback() {
   const success = await sendMessage(phone);
 
   showToast(success);
-  ['cb-name', 'cb-phone', 'cb-time', 'cb-comment'].forEach((id) => {
-    document.getElementById(id).value = '';
-  });
+
+  if (success) {
+    ['cb-name', 'cb-phone', 'cb-time', 'cb-comment'].forEach((id) => {
+      document.getElementById(id).value = '';
+    });
+  }
 }
 
 calcPrice();
