@@ -102,10 +102,6 @@ async function sendMessage(phone) {
   try {
     await fetch(url, {
       method: 'POST',
-      headers: {
-        Authorization: TOKEN,
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify({ company: 'vostorg', phone }),
     });
     return true;
