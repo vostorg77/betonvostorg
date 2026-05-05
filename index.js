@@ -97,29 +97,19 @@ function submitCalc() {
 }
 
 async function sendMessage(phone) {
-  const BOT_TOKEN = '123456789:AAHdqTcv...'; // ⚠️ Только для локальных тестов!
-  const CHAT_ID = '-1001234567890'; // ID чата (канал, группа или личный)
-
-  const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-
-  const text = `📞 Телефон: ${phone}`;
+  const url = new URL('max-proxy-sites.vostorg-77.workers.dev');
 
   try {
     await fetch(url, {
       method: 'POST',
       headers: {
+        Authorization: TOKEN,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        chat_id: CHAT_ID,
-        text,
-        parse_mode: 'HTML',
-      }),
+      body: JSON.stringify({ company: 'vostorg', phone }),
     });
-
     return true;
-  } catch (error) {
-    console.error('❌ Network error:', error);
+  } catch {
     return false;
   }
 }
